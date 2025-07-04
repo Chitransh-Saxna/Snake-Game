@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    background: url("./bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board {
+    background: linear-gradient(rgb(5, 94, 5), rgb(177, 219, 137));
+    width: 90vmin;
+    height: 90vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+}
+
+.head {
+    background-color: red;
+}
+.snake{
+    background-color: black;
+}
+
+.food {
+    background-color: purple;
+}
